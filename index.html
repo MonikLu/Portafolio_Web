@@ -9,14 +9,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Fuente del Proyecto Raleway -->
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <title>Portafolio Monik Lu</title>
 </head>
 
 <body>
+    <!-- Preloader -->
+    <div id="preloader">
+            <div class="spinner"></div>
+    </div>
+
     <!-- Menú -->
     <header class="cabecera">
         <img class="cabecera__logo" src="assets/vector.png" alt="Logo">
         <h1 class="cabecera__titulo">Portafolio</h1>
+            
+         <!-- Checkbox para el menú responsivo -->
+            <input type="checkbox" id="menu-toggle-checkbox" class="menu-toggle-checkbox">
+            <label for="menu-toggle-checkbox" class="menu-toggle-label">&#9776;</label>
+
         <nav class="navegacion">
             <ul class="navegacion__lista">
                 <li class="navegacion__elemento"><a href="#sobre-mi">Sobre mí</a></li>
@@ -29,59 +40,77 @@
         </nav>
     </header>
 
+
     <!-- Sección de Presentación -->
     <section class="presentacion">
-        <img class="presentacion__foto" src="assets/profile.png" alt="Foto de perfil">
         <div class="presentacion__contenedor">
-            <h2 class="presentacion__titulo">¡Bienvenidos!</h2>
-            <p class="presentacion__subtitulo">¡Hola! Mi nombre es Mónica Luquerna y soy una entusiasta de la tecnología con un perfil multifacético. Desde el deporte y la fotografía hasta los videojuegos y las series, disfruto de todo lo que implique aprender y explorar nuevas cosas.  Esta misma pasión me llevó a sumergirme en el desarrollo front-end, donde estoy descubriendo el potencial de crear experiencias digitales innovadoras. Gracias al ONE de Oracle en Alura Latam, estoy ampliando mis conocimientos día a día y estoy emocionada por aplicar lo que aprendo para construir interfaces web que sean tan dinámicas y envolventes como las últimas tendencias tecnológicas.</p>
+            <img class="presentacion__imagen" src="assets/presentacion.png" alt="Foto de presentación">
+            <h2 class="presentacion__titulo">¡HOLA! Soy Mónica Luquerna</h2>
+            <h3 class="presentacion__subtitulo consola">Profesional en soporte técnico TI y en formación como desarrolladora front-end, con pasión por la tecnología y la creatividad.</h3>
+                                 
             <ul class="redes">
-                <li class="redes__img"><a href="">Github <img src="assets/arrow.png" alt="Flecha"></a></li>
-                <li class="redes__img"><a href="">Linkedin <img src="assets/arrow.png" alt="Flecha"></a></li>
-                <li class="redes__img"><a href="">Instagram <img src="assets/arrow.png" alt="Flecha"></a></li>
-                <li class="redes__img"><a href="">Currículo <img src="assets/arrow.png" alt="Flecha"></a></li>
+                <li class="redes__img"><a href="https://github.com/MonikLu">Github <img src="assets/arrow.png" alt="Flecha"></a></li>
+                <li class="redes__img"><a href="https://www.linkedin.com/in/mónica-luquerna-m">LinkedIn <img src="assets/arrow.png" alt="Flecha"></a></li>
+                <li class="redes__img"><a href="https://www.instagram.com/monik_luq/">Instagram <img src="assets/arrow.png" alt="Flecha"></a></li>
+               
             </ul>
         </div>
     </section>
 
+
+
     <!-- Sección sobre mí -->
     <section class="sobre-mi" id="sobre-mi">
+        <img class="sobre-mi__foto" src="assets/profile.gif" alt="Foto de perfil">
         <h2 class="sobre-mi__titulo">Sobre mí</h2>
         <p class="sobre-mi__texto">En mi camino hacia convertirme en una desarrolladora front-end, estoy aprovechando al máximo los recursos que ofrece el proyecto ONE de Oracle en Alura Latam. Mi experiencia previa en soporte técnico me ha proporcionado una base sólida para resolver problemas y prestar atención a los detalles, y ahora estoy aplicando estos conocimientos para crear interfaces de usuario intuitivas y visualmente atractivas. Estoy entusiasmada con la oportunidad de seguir aprendiendo y creciendo en este campo.</p>
         </p>
-        <!-- Firma opcional -->
-        <img class="sobre-mi__firma" src="assets/signature.png" alt="Firma">
+        
     </section>
 
-    <!-- Sección de Habilidades -->
+   <!-- Sección Habilidades -->
     <section class="habilidades" id="habilidades">
         <h2 class="habilidades__titulo">Habilidades</h2>
-        <ul class="habilidades__lista">
-            <li class="habilidades__elemento">
-                <img class="habilidades__icono" src="assets/html.png" alt="HTML">
-                <p class="habilidades__nombre">HTML 5</p>
-            </li>
-            <li class="habilidades__elemento">
-                <img class="habilidades__icono" src="assets/js_icon.png" alt="JavaScript">
-                <p class="habilidades__nombre">JavaScript</p>
-            </li>
-            <li class="habilidades__elemento">
-                <img class="habilidades__icono" src="assets/php_icon.png" alt="PHP">
-                <p class="habilidades__nombre">PHP</p>
-            </li>
-            <li class="habilidades__elemento">
-                <img class="habilidades__icono" src="assets/nodejs_icon.png" alt="Node.js">
-                <p class="habilidades__nombre">Node.js</p>
-            </li>
-            <li class="habilidades__elemento">
-                <img class="habilidades__icono" src="assets/react_icon.png" alt="React">
-                <p class="habilidades__nombre">React</p>
-            </li>
-            <li class="habilidades__elemento">
-                <img class="habilidades__icono" src="assets/css_icon.png" alt="CSS">
-                <p class="habilidades__nombre">CSS</p>
-            </li>
-        </ul>
+
+        <!-- Habilidades Técnicas -->
+        <div class="habilidades__subseccion">
+            <h3 class="habilidades__subtitulo">Habilidades Técnicas</h3>
+            <ul class="habilidades__lista">
+                <li class="habilidades__elemento">
+                    <img class="habilidades__imagen" src="assets/html_icon.png" alt="HTML">
+                    <p class="habilidades__nombre">HTML 5</p>
+                </li>
+                <li class="habilidades__elemento">
+                    <img class="habilidades__imagen" src="assets/js_icon.png" alt="JavaScript">
+                    <p class="habilidades__nombre">JavaScript</p>
+                </li>
+                <li class="habilidades__elemento">
+                    <img class="habilidades__imagen" src="assets/css_icon.png" alt="CSS">
+                    <p class="habilidades__nombre">CSS</p>
+                </li>
+                <!-- Añade más habilidades técnicas según sea necesario -->
+            </ul>
+        </div>
+
+        <!-- Habilidades Blandas -->
+        <div class="habilidades__subseccion">
+            <h3 class="habilidades__subtitulo">Habilidades Blandas</h3>
+            <ul class="habilidades__lista">
+                <li class="habilidades__elemento">
+                    <p class="habilidades__nombre">Trabajo en equipo</p>
+                </li>
+                <li class="habilidades__elemento">
+                    <p class="habilidades__nombre">Capacidad de análisis</p>
+                </li>
+                <li class="habilidades__elemento">
+                    <p class="habilidades__nombre">Resolución de problemas</p>
+                </li>
+                <li class="habilidades__elemento">
+                    <p class="habilidades__nombre">Pensamiento crítico</p>
+                </li>
+                
+            </ul>
+        </div>
     </section>
 
     <!-- Sección de Aficiones -->
@@ -89,29 +118,30 @@
         <h2 class="aficiones__titulo">Aficiones</h2>
         <ul class="aficiones__lista">
             <li class="aficiones__elemento">
-                <img class="aficiones__icono" src="assets/skate_icon.png" alt="Patinaje">
-                <p class="aficiones__nombre">Patinaje</p>
+                <img class="aficiones__icono" src="assets/futbol_icon.gif" alt="Fútbol">
+                <p class="aficiones__nombre">Fútbol</p>
             </li>
             <li class="aficiones__elemento">
-                <img class="aficiones__icono" src="assets/guitar_icon.png" alt="Tocar bajo">
-                <p class="aficiones__nombre">Tocar bajo</p>
+                <img class="aficiones__icono" src="assets/perro_icon.gif" alt="Entrenar mi mascota">
+                <p class="aficiones__nombre">Entrenar mi mascota</p>
             </li>
             <li class="aficiones__elemento">
-                <img class="aficiones__icono" src="assets/headphones_icon.png" alt="Oír música">
-                <p class="aficiones__nombre">Oír música</p>
+                <img class="aficiones__icono" src="assets/foto_icon.gif" alt="Fotografía">
+                <p class="aficiones__nombre">Fotografía</p>
             </li>
             <li class="aficiones__elemento">
-                <img class="aficiones__icono" src="assets/tv_icon.png" alt="Ver series">
-                <p class="aficiones__nombre">Ver series</p>
+                <img class="aficiones__icono" src="assets/juegos_icon.gif" alt="Videojuegos">
+                <p class="aficiones__nombre">Videojuegos</p>
             </li>
             <li class="aficiones__elemento">
-                <img class="aficiones__icono" src="assets/forkspoon_icon.png" alt="Cocinar">
-                <p class="aficiones__nombre">Cocinar</p>
+                <img class="aficiones__icono" src="assets/tech_icon.gif" alt="Tecnología">
+                <p class="aficiones__nombre">Tecnología</p>
             </li>
             <li class="aficiones__elemento">
-                <img class="aficiones__icono" src="assets/camera_icon.png" alt="Tomar fotos">
-                <p class="aficiones__nombre">Tomar fotos</p>
+                <img class="aficiones__icono" src="assets/music_icon.gif" alt="Escuchar música">
+                <p class="aficiones__nombre">Escuchar música</p>
             </li>
+            
         </ul>
     </section>
 
@@ -120,24 +150,24 @@
         <h2 class="formacion__titulo">Formación académica</h2>
         <ul class="formacion__lista">
             <li class="formacion__elemento">
-                <img class="formacion__icono" src="assets/ufpr_logo.png" alt="UFPR">
+                <img class="formacion__icono" src="assets/alura_logo.png" alt="UFPR">
                 <div>
-                    <h3 class="formacion__nombre">Análisis de datos</h3>
-                    <p class="formacion__detalle">2018 - UFPR</p>
+                    <h3 class="formacion__nombre">Formación en Dev Front-end</h3>
+                    <p class="formacion__detalle">En curso - Alura</p>
                 </div>
             </li>
             <li class="formacion__elemento">
-                <img class="formacion__icono" src="assets/alura_logo.png" alt="Alura">
+                <img class="formacion__icono" src="assets/aws_icon.png" alt="Alura">
                 <div>
-                    <h3 class="formacion__nombre">Formación en UX Design</h3>
-                    <p class="formacion__detalle">2019 - Alura</p>
+                    <h3 class="formacion__nombre">Certificación AWS Cloud practitioner</h3>
+                    <p class="formacion__detalle">2022 - Amazon web services</p>
                 </div>
             </li>
             <li class="formacion__elemento">
-                <img class="formacion__icono" src="assets/ufrj_logo.png" alt="UFRJ">
+                <img class="formacion__icono" src="assets/sena_logo.png" alt="UFRJ">
                 <div>
-                    <h3 class="formacion__nombre">Posgrado en diseño</h3>
-                    <p class="formacion__detalle">En curso - UFRJ</p>
+                    <h3 class="formacion__nombre">Técnico en mantenimiento equipos de cómputo</h3>
+                    <p class="formacion__detalle">2015 - SENA</p>
                 </div>
             </li>
         </ul>
@@ -147,12 +177,15 @@
     <section class="proyectos" id="proyectos">
         <h2 class="proyectos__titulo">Experiencia Profesional</h2>
         <div class="proyectos__contenedor">
-            <h3 class="proyectos__nombre">Título de la Experiencia</h3>
-            <p class="proyectos__descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt quisquam unde repudiandae fugiat, earum temporibus!</p>
+            <h3 class="proyectos__nombre">Encriptador de texto</h3>
+            <p class="proyectos__descripcion">Challenge de Alura, el cual consta de un encriptador y desencriptador de texto simple,
+                desarrollado con HTML, CSS y JavaScript. La página web permite a los usuarios encriptar y desencriptar palabras o frases según un esquema definido</p>
         </div>
         <div class="proyectos__contenedor">
-            <h3 class="proyectos__nombre">Título de la Experiencia</h3>
-            <p class="proyectos__descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt quisquam unde repudiandae fugiat, earum temporibus!</p>
+            <h3 class="proyectos__nombre">Soporte técnico TI</h3>
+            <p class="proyectos__descripcion">Tengo varios años de experiencia en soporte técnico, trabajando en diversas empresas y proyectos. He brindado soluciones a problemas de hardware, software, redes y telefonía, especializándome en la instalación y configuración de equipos. También he realizado mantenimiento preventivo y correctivo, además de asistir técnicamente en eventos. 
+                 Mi trabajo incluye la gestión de inventarios, migración de datos y creación de copias de seguridad.
+                Mi pasión por la tecnología me impulsa a seguir aprendiendo y mejorando continuamente</p>
         </div>
     </section>
 
@@ -162,10 +195,16 @@
         <form class="contacto__formulario">
             <input class="contacto__campo" type="text" placeholder="Nombre">
             <input class="contacto__campo" type="email" placeholder="Correo Electrónico">
+            <input class="contacto__campo" type="tema" placeholder="Asunto">
             <textarea class="contacto__campo contacto__campo--textarea" placeholder="Mensaje"></textarea>
             <button class="contacto__boton" type="submit">Enviar</button>
         </form>
     </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>© Monik Lu 2024</p>
+    </footer>
 </body>
     <script src="script.js"></script>
 </html>
