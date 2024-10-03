@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-document.querySelector(".contacto__formulario").addEventListener("submit", function(event) {
+document.querySelector("#contacto__formulario").addEventListener("submit", function(event) {
     const nombre = document.querySelector(".contacto__campo[type='text']").value.trim();
     const correo = document.querySelector(".contacto__campo[type='email']").value.trim();
     const asunto = document.querySelector(".contacto__campo[type='tema']").value.trim();
