@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.querySelector("#contacto__formulario").addEventListener("submit", function(event) {
     const nombre = document.querySelector(".contacto__campo[type='text']").value.trim();
     const correo = document.querySelector(".contacto__campo[type='email']").value.trim();
-    const asunto = document.querySelector(".contacto__campo[type='tema']").value.trim();
+    const asunto = document.querySelector(".contacto__campo[type='tema']"):nth-of-type(3);
     const mensaje = document.querySelector(".contacto__campo--textarea").value.trim();
     
     if (nombre === "" || correo === "" || asunto === "" || mensaje === ""){
